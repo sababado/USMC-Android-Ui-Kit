@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:showIn="@layout/content_main">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <RelativeLayout
+                android:clickable="true"
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?android:selectableItemBackground"
+                android:padding="@dimen/default_padding">
+
+            <TextView
+                    android:id="@+id/cardTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/default_padding"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/pft"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="35sp"/>
+
+            <TextView
+                    android:id="@+id/recent_score_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/cardTitle"
+                    android:fontFamily="sans-serif-light"
+                    android:labelFor="@+id/recent_score"
+                    android:text="@string/recent_score"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            <TextView
+                    android:id="@+id/recent_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/recent_score_label"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="sans-serif-thin"
+                    android:text="@string/mdash"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="35sp"/>
+
+            <TextView
+                    android:id="@+id/best_score_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/best_score"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/best_score"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            <TextView
+                    android:id="@+id/best_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/recent_score_label"
+                    android:fontFamily="sans-serif-thin"
+                    android:text="@string/mdash"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="35sp"/>
+        </RelativeLayout>
+
+        <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gold"/>
+
+        <TextView
+                android:id="@+id/view_full_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:fontFamily="sans-serif-thin"
+                android:gravity="center"
+                android:padding="@dimen/default_padding"
+                android:text="@string/view_full_history"
+                android:clickable="true"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="USMCTheme">
+        <attr name="primaryButton" format="reference"/>
+        <attr name="simpleDropdownSpinnerItemBackground" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="UsmcAppBar">
+        <attr name="background" format="reference"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Demo</string>
+    <string name="pft">PFT</string>
+    <string name="best_score">Best Score</string>
+    <string name="recent_score">Recent Score</string>
+    <string name="mdash">&#8212;</string>
+    <string name="view_full_history">View Full History</string>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>
