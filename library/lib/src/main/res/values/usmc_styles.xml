@@ -20,14 +20,14 @@
         <item name="windowActionModeOverlay">true</item>
         <item name="android:windowActionModeOverlay">true</item>
         <item name="actionBarStyle">@style/USMCTheme.ActionBarTheme</item>
+        <!--TODO Fix button style <item name="materialButtonStyle">@style/USMCTheme.Widget.Button</item>-->
         <item name="materialCardViewStyle">@style/USMCTheme.CardView</item>
+        <item name="floatingActionButtonStyle">@style/USMCTheme.Widget.FloatingActionButton</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
 
     <style name="USMCTheme.Widget.FloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
-        <item name="backgroundTint">@color/usmc_fab_background_tint</item>
-        <item name="elevation">@dimen/usmc_fab_elevation</item>
         <item name="rippleColor">@color/blue</item>
     </style>
 
@@ -79,4 +79,9 @@
         <item name="cardElevation">8dp</item>
         <item name="cardBackgroundColor">@color/blue_lightish</item>
     </style>
+
+    <!--<style name="USMCTheme.Widget.Button" parent="Widget.MaterialComponents.Button">-->
+    <!--<item name="backgroundTint">?attr/colorControlHighlight</item>-->
+    <!--<item name="android:textColor">@color/usmc_btn_color</item>-->
+    <!--</style>-->
 </resources>

@@ -1,5 +1,4 @@
 <resources>
     <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="usmc_fab_elevation">4dp</dimen>
     <dimen name="usmc_action_bar_elevation">6dp</dimen>
 </resources>
