@@ -11,12 +11,12 @@
     <style name="USMCTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <!--   your app branding color for the app bar -->
-        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimary">@color/usmc_primary</item>
         <!--   darker variant for the status bar and contextual app bars -->
-        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorPrimaryDark">@color/usmc_primary_dark</item>
         <!--   theme UI controls like checkboxes and text fields -->
-        <item name="colorAccent">@color/accent</item>
-        <item name="android:windowBackground">@color/window_background</item>
+        <item name="colorAccent">@color/usmc_accent</item>
+        <item name="android:windowBackground">@color/usmc_window_background</item>
         <item name="windowActionModeOverlay">true</item>
         <item name="android:windowActionModeOverlay">true</item>
         <item name="actionBarStyle">@style/USMCTheme.ActionBarTheme</item>
@@ -28,12 +28,12 @@
     </style>
 
     <style name="USMCTheme.Widget.FloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
-        <item name="rippleColor">@color/blue</item>
+        <item name="rippleColor">@color/usmc_blue</item>
     </style>
 
     <style name="USMC.Widget.TabLayout" parent="Widget.MaterialComponents.TabLayout">
         <item name="tabSelectedTextColor">@android:color/white</item>
-        <item name="android:background">@color/blue</item>
+        <item name="android:background">@color/usmc_blue</item>
         <item name="tabTextAppearance">@style/USMC.TextAppearance.TabTextAppearance</item>
         <item name="tabIndicatorHeight">4dp</item>
         <item name="android:elevation">@dimen/usmc_action_bar_elevation</item>
@@ -45,7 +45,7 @@
     <style name="TextAppearance.Design.Tab" parent="TextAppearance.AppCompat.Button">
     -->
     <style name="USMC.TextAppearance.TabTextAppearance" parent="TextAppearance.MaterialComponents.Button">
-        <item name="android:textColor">@color/silver_pressed</item>
+        <item name="android:textColor">@color/usmc_silver_pressed</item>
     </style>
 
     <style name="USMCTheme.Flavor.NoActionBar">
@@ -59,7 +59,7 @@
 
     <style name="USMCTheme.Transparent" parent="USMCTheme.Flavor">
         <item name="android:windowIsTranslucent">true</item>
-        <item name="android:windowBackground">@color/black_translucent</item>
+        <item name="android:windowBackground">@color/usmc_black_translucent</item>
         <item name="android:colorBackgroundCacheHint">@null</item>
         <item name="android:backgroundDimEnabled">true</item>
     </style>
@@ -77,7 +77,7 @@
 
     <style name="USMCTheme.CardView" parent="Widget.MaterialComponents.CardView">
         <item name="cardElevation">8dp</item>
-        <item name="cardBackgroundColor">@color/blue_lightish</item>
+        <item name="cardBackgroundColor">@color/usmc_blue_lightish</item>
     </style>
 
     <!--<style name="USMCTheme.Widget.Button" parent="Widget.MaterialComponents.Button">-->

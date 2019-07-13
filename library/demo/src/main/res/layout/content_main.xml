@@ -73,9 +73,11 @@
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp" app:layout_constraintTop_toTopOf="@+id/editText"
             app:layout_constraintBottom_toBottomOf="@+id/editText"/>
+    <!-- TODO Make custom view out of the SeekBar -->
     <SeekBar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:thumbTint="@color/blue"
             android:id="@+id/seekBar" android:layout_marginTop="8dp"
             app:layout_constraintTop_toBottomOf="@+id/editText2" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
