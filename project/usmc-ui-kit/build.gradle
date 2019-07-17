@@ -1,25 +1,38 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.novoda:bintray-release:0.9.1'
+    }
+}
+
 apply plugin: 'com.android.library'
-//apply plugin: 'com.novoda.bintray-release' // must be applied after your artifact generating plugin (eg. java / com.android.library)
+apply plugin: 'com.novoda.bintray-release' // must be applied after your artifact generating plugin (eg. java / com.android.library)
 
 apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
-//buildscript {
-//    repositories {
-//        jcenter()
-//    }
-//    dependencies {
-//        classpath 'com.novoda:bintray-release:0.9.1'
-//    }
-//}
-
 def versionMajor = 0
 def versionMinor = 9
 def versionPatch = 0
-def versionBuild = 0 // bump for dogfood builds, public betas, etc.
+def versionBuild = 2 // bump for dogfood builds, public betas, etc.
 def vN = "${versionMajor}.${versionMinor}.${versionPatch}.${versionBuild}"
 def vC = versionMajor * 1000000 + versionMinor * 100000 + versionPatch * 10000 + versionBuild * 10
+
+publish {
+    userOrg = 'rat141312'
+    groupId = 'com.sababado.dod'
+    artifactId = 'usmc-ui-kit'
+    publishVersion = vN
+    desc = 'USMC Themed UI Kit for Android'
+    website = 'https://github.com/sababado/USMC-Android-Ui-Kit'
+    repository = 'https://github.com/sababado/USMC-Android-Ui-Kit'
+    licences = ["GNU GPL v3"]
+    bintrayUser = BINTRAY_USER
+    bintrayKey = BINTRAY_KEY
+}
 
 android {
     compileSdkVersion 28
@@ -50,17 +63,3 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }
-
-//publish {
-//    userOrg = 'rszabo'
-//    groupId = 'com.sababado.dod'
-//    artifactId = 'usmc-ui-kit'
-//    publishVersion = vN
-//    desc = 'USMC Themed UI Kit for Android'
-//    website = 'https://github.com/sababado/USMC-Android-Ui-Kit'
-//    repository = 'https://github.com/sababado/USMC-Android-Ui-Kit'
-//    bintrayUser = System.getenv("BINTRAY_USER")
-//    bintrayKey = System.getenv("BINTRAY_KEY")
-//}
-
-apply from: 'publish.gradle'
