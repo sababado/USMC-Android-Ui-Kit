@@ -20,3 +20,9 @@ App Bar
 
 </com.google.android.material.appbar.AppBarLayout>
 ```
+
+# Personal Lazy Reminder.
+To publish
+```
+$ ./gradlew clean build bintrayUpload -PbintrayUser=BINTRAY_USERNAME -PbintrayKey=BINTRAY_KEY -PdryRun=false
+```
