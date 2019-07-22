@@ -1,4 +1,10 @@
 <resources>
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="usmc_action_bar_elevation">6dp</dimen>
+    <dimen name="tiny_margin">4dp</dimen>
+    <dimen name="small_margin">6dp</dimen>
+    <dimen name="common_margin">8dp</dimen>
+    <dimen name="medium_margin">16dp</dimen>
+    <dimen name="big_margin">24dp</dimen>
+    <dimen name="huge_margin">32dp</dimen>
 </resources>

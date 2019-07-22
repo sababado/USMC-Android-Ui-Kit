@@ -2,21 +2,22 @@
 
     <!-- Base application theme. -->
     <style name="USMCTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+
         <!-- Customize your theme here. -->
         <!--   your app branding color for the app bar -->
         <item name="colorPrimary">@color/usmc_primary</item>
-        <!--<item name="colorPrimaryVariant">#000000</item>-->
-        <!--<item name="colorOnPrimary">#FFFFFF</item>-->
+        <!--<item name="colorPrimaryVariant">@color/usmc_primary_dark</item>-->
+        <!--<item name="colorOnPrimary">@color/usmc_white</item>-->
         <!--   darker variant for the status bar and contextual app bars -->
         <item name="colorPrimaryDark">@color/usmc_primary_dark</item>
         <!--   theme UI controls like checkboxes and text fields -->
         <!--<item name="colorAccent">@color/usmc_accent</item>-->
         <item name="colorSecondary">@color/usmc_red</item>
-        <!--<item name="colorSecondaryVariant">#0039CB</item>-->
-        <!--<item name="colorOnSecondary">#FFFFFF</item>-->
+        <!--<item name="colorSecondaryVariant">@color/usmc_red_variant_dark</item>-->
+        <!--<item name="colorOnSecondary">@color/usmc_white</item>-->
 
 
-        <item name="colorError">#ff4f30</item>
+        <item name="colorError">@color/usmc_red_variant_light</item>
         <!--<item name="colorOnError">#85000000</item>-->
 
         <!--<item name="colorSurface">@color/usmc_blue_lightish</item>-->

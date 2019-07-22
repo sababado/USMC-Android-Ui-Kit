@@ -3,7 +3,7 @@
           package="com.sababado.dod.usmc_ui_kitldemo">
 
     <application
-            android:allowBackup="true"
+            android:allowBackup="false"
             android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name"
             android:roundIcon="@mipmap/ic_launcher_round"
@@ -16,6 +16,7 @@
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.VIEW"/> <!-- Remove App Indexing -->
             </intent-filter>
         </activity>
     </application>

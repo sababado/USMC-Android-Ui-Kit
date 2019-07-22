@@ -2,14 +2,15 @@
 <resources>
     <color name="usmc_primary">@color/usmc_blue</color>
     <color name="usmc_primary_pressed">#C62828</color>
-    <color name="usmc_primary_dark">@color/usmc_blue_dark</color>
+    <color name="usmc_primary_dark">@color/usmc_blue_variant_dark</color>
     <color name="usmc_accent">@color/usmc_red</color>
     <color name="usmc_window_background">@color/usmc_silver</color>
 
     <color name="usmc_blue_light">#fff0f0ff</color>
     <color name="usmc_blue_lightish">#ffc1c1d1</color>
+    <color name="usmc_blue_variant_light">#442995</color>
     <color name="usmc_blue">#000066</color>
-    <color name="usmc_blue_dark">#ff00003b</color>
+    <color name="usmc_blue_variant_dark">#ff00003b</color>
 
     <color name="navy_blue">#0a3782</color>
 
@@ -20,8 +21,9 @@
     <color name="usmc_off_white">#FFFDFDFD</color>
 
     <color name="usmc_red_super_light">#FFEBEE</color>
+    <color name="usmc_red_variant_light">#ff4f30</color>
     <color name="usmc_red">#CC0000</color>
-    <color name="usmc_red_dark">#ff7e1a1a</color>
+    <color name="usmc_red_variant_dark">#930000</color>
     <color name="usmc_red_see_through">#AACC0000</color>
 
     <color name="usmc_gold">#CC9900</color>
