@@ -16,8 +16,8 @@ apply plugin: 'kotlin-android-extensions'
 
 def versionMajor = 0
 def versionMinor = 9
-def versionPatch = 0
-def versionBuild = 2 // bump for dogfood builds, public betas, etc.
+def versionPatch = 1
+def versionBuild = 0 // bump for dogfood builds, public betas, etc.
 def vN = "${versionMajor}.${versionMinor}.${versionPatch}.${versionBuild}"
 def vC = versionMajor * 1000000 + versionMinor * 100000 + versionPatch * 10000 + versionBuild * 10
 
@@ -57,7 +57,7 @@ dependencies {
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.0.2'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.google.android.material:material:1.1.0-alpha08'
     implementation 'androidx.core:core-ktx:1.0.2'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'

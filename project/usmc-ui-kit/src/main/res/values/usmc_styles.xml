@@ -1,5 +1,40 @@
 <resources>
 
+    <!-- Base application theme. -->
+    <style name="USMCTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <!--   your app branding color for the app bar -->
+        <item name="colorPrimary">@color/usmc_primary</item>
+        <!--<item name="colorPrimaryVariant">#000000</item>-->
+        <!--<item name="colorOnPrimary">#FFFFFF</item>-->
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/usmc_primary_dark</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <!--<item name="colorAccent">@color/usmc_accent</item>-->
+        <item name="colorSecondary">@color/usmc_red</item>
+        <!--<item name="colorSecondaryVariant">#0039CB</item>-->
+        <!--<item name="colorOnSecondary">#FFFFFF</item>-->
+
+
+        <item name="colorError">#ff4f30</item>
+        <!--<item name="colorOnError">#85000000</item>-->
+
+        <!--<item name="colorSurface">@color/usmc_blue_lightish</item>-->
+        <!--<item name="colorOnSurface">#212121</item>-->
+
+        <item name="android:colorBackground">@color/usmc_window_background</item>
+        <!--<item name="colorOnBackground">#212121</item>-->
+        <!--<item name="android:windowBackground">@color/usmc_window_background</item>-->
+
+
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="actionBarStyle">@style/USMCTheme.ActionBarTheme</item>
+        <!--TODO Fix button style <item name="materialButtonStyle">@style/USMCTheme.Widget.Button</item>-->
+        <item name="materialCardViewStyle">@style/USMCTheme.CardView</item>
+        <item name="floatingActionButtonStyle">@style/USMCTheme.Widget.FloatingActionButton</item>
+    </style>
+
     <style name="USMCTheme.Flavor" parent="USMCTheme">
         <!-- The following attributes should be customized in each flavor -->
         <item name="primaryButton">@drawable/usmc_primary_button_ripple</item>
@@ -7,22 +42,7 @@
         </item>
     </style>
 
-    <!-- Base application theme. -->
-    <style name="USMCTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <!--   your app branding color for the app bar -->
-        <item name="colorPrimary">@color/usmc_primary</item>
-        <!--   darker variant for the status bar and contextual app bars -->
-        <item name="colorPrimaryDark">@color/usmc_primary_dark</item>
-        <!--   theme UI controls like checkboxes and text fields -->
-        <item name="colorAccent">@color/usmc_accent</item>
-        <item name="android:windowBackground">@color/usmc_window_background</item>
-        <item name="windowActionModeOverlay">true</item>
-        <item name="android:windowActionModeOverlay">true</item>
-        <item name="actionBarStyle">@style/USMCTheme.ActionBarTheme</item>
-        <!--TODO Fix button style <item name="materialButtonStyle">@style/USMCTheme.Widget.Button</item>-->
-        <item name="materialCardViewStyle">@style/USMCTheme.CardView</item>
-        <item name="floatingActionButtonStyle">@style/USMCTheme.Widget.FloatingActionButton</item>
+    <style name="USMCTheme.Flavor.NoActionBar" parent="USMCTheme.Flavor">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
@@ -48,14 +68,27 @@
         <item name="android:textColor">@color/usmc_silver_pressed</item>
     </style>
 
-    <style name="USMCTheme.Flavor.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
+    <style name="USMCTheme.Flavor.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar">
+        <item name="colorPrimary">@color/usmc_primary</item>
+        <item name="colorPrimaryDark">@color/usmc_primary_dark</item>
+        <item name="colorSecondary">@color/usmc_red</item>
+        <item name="colorError">#ff4f30</item>
+        <item name="android:colorBackground">@color/usmc_window_background</item>
+        <item name="actionBarStyle">@style/USMCTheme.ActionBarTheme</item>
+        <item name="materialCardViewStyle">@style/USMCTheme.CardView</item>
+        <item name="floatingActionButtonStyle">@style/USMCTheme.Widget.FloatingActionButton</item>
     </style>
 
-    <style name="USMCTheme.Flavor.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar"/>
-
-    <style name="USMCTheme.Flavor.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light"/>
+    <style name="USMCTheme.Flavor.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light">
+        <item name="colorPrimary">@color/usmc_primary</item>
+        <item name="colorPrimaryDark">@color/usmc_primary_dark</item>
+        <item name="colorSecondary">@color/usmc_red</item>
+        <item name="colorError">#ff4f30</item>
+        <item name="android:colorBackground">@color/usmc_window_background</item>
+        <item name="actionBarStyle">@style/USMCTheme.ActionBarTheme</item>
+        <item name="materialCardViewStyle">@style/USMCTheme.CardView</item>
+        <item name="floatingActionButtonStyle">@style/USMCTheme.Widget.FloatingActionButton</item>
+    </style>
 
     <style name="USMCTheme.Transparent" parent="USMCTheme.Flavor">
         <item name="android:windowIsTranslucent">true</item>
