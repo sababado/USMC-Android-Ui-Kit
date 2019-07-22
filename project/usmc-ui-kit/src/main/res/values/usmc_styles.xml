@@ -118,4 +118,16 @@
     <!--<item name="backgroundTint">?attr/colorControlHighlight</item>-->
     <!--<item name="android:textColor">@color/usmc_btn_color</item>-->
     <!--</style>-->
+
+    <style name="USMCTheme.TextAppearance.Large" parent="@android:style/TextAppearance.Material.Large">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="USMCTheme.TextAppearance.Medium" parent="@android:style/TextAppearance.Material.Medium">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="USMCTheme.TextAppearance.Small" parent="@android:style/TextAppearance.Material.Small">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
 </resources>
