@@ -4,6 +4,7 @@ Android library with USMC styles
 App Bar
 - Must use Coordinator Layout
 - Look at `activity_main.xml` for an example.
+- Manually set background (for now)
 
 ```xml
 <com.google.android.material.appbar.AppBarLayout
