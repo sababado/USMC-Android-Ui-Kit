@@ -30,8 +30,7 @@
 
         <item name="windowActionModeOverlay">true</item>
         <item name="android:windowActionModeOverlay">true</item>
-        <item name="actionBarStyle">@style/USMCTheme.ActionBarTheme</item>
-        <!--TODO Fix button style <item name="materialButtonStyle">@style/USMCTheme.Widget.Button</item>-->
+        <item name="actionBarStyle">@style/USMCTheme.ActionBarStyle</item>
         <item name="materialCardViewStyle">@style/USMCTheme.CardView</item>
         <item name="floatingActionButtonStyle">@style/USMCTheme.Widget.FloatingActionButton</item>
     </style>
@@ -46,6 +45,41 @@
     <style name="USMCTheme.Flavor.NoActionBar" parent="USMCTheme.Flavor">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="USMCTheme.Flavor.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar">
+        <item name="colorPrimary">@color/usmc_primary</item>
+        <item name="colorPrimaryDark">@color/usmc_primary_dark</item>
+        <item name="colorSecondary">@color/usmc_red</item>
+        <item name="colorError">#ff4f30</item>
+        <item name="android:colorBackground">@color/usmc_window_background</item>
+        <item name="actionBarStyle">@style/USMCTheme.ActionBarStyle</item>
+        <item name="materialCardViewStyle">@style/USMCTheme.CardView</item>
+        <item name="floatingActionButtonStyle">@style/USMCTheme.Widget.FloatingActionButton</item>
+    </style>
+
+    <style name="USMCTheme.Flavor.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light">
+        <item name="colorPrimary">@color/usmc_primary</item>
+        <item name="colorPrimaryDark">@color/usmc_primary_dark</item>
+        <item name="colorSecondary">@color/usmc_red</item>
+        <item name="colorError">#ff4f30</item>
+        <item name="android:colorBackground">@color/usmc_window_background</item>
+        <item name="actionBarStyle">@style/USMCTheme.ActionBarStyle</item>
+        <item name="materialCardViewStyle">@style/USMCTheme.CardView</item>
+        <item name="floatingActionButtonStyle">@style/USMCTheme.Widget.FloatingActionButton</item>
+    </style>
+
+    <style name="USMCTheme.Transparent" parent="USMCTheme.Flavor">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/usmc_black_translucent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="USMCTheme.Transparent.NoTitleBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
     </style>
 
     <style name="USMCTheme.Widget.FloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
@@ -69,42 +103,7 @@
         <item name="android:textColor">@color/usmc_silver_pressed</item>
     </style>
 
-    <style name="USMCTheme.Flavor.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar">
-        <item name="colorPrimary">@color/usmc_primary</item>
-        <item name="colorPrimaryDark">@color/usmc_primary_dark</item>
-        <item name="colorSecondary">@color/usmc_red</item>
-        <item name="colorError">#ff4f30</item>
-        <item name="android:colorBackground">@color/usmc_window_background</item>
-        <item name="actionBarStyle">@style/USMCTheme.ActionBarTheme</item>
-        <item name="materialCardViewStyle">@style/USMCTheme.CardView</item>
-        <item name="floatingActionButtonStyle">@style/USMCTheme.Widget.FloatingActionButton</item>
-    </style>
-
-    <style name="USMCTheme.Flavor.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light">
-        <item name="colorPrimary">@color/usmc_primary</item>
-        <item name="colorPrimaryDark">@color/usmc_primary_dark</item>
-        <item name="colorSecondary">@color/usmc_red</item>
-        <item name="colorError">#ff4f30</item>
-        <item name="android:colorBackground">@color/usmc_window_background</item>
-        <item name="actionBarStyle">@style/USMCTheme.ActionBarTheme</item>
-        <item name="materialCardViewStyle">@style/USMCTheme.CardView</item>
-        <item name="floatingActionButtonStyle">@style/USMCTheme.Widget.FloatingActionButton</item>
-    </style>
-
-    <style name="USMCTheme.Transparent" parent="USMCTheme.Flavor">
-        <item name="android:windowIsTranslucent">true</item>
-        <item name="android:windowBackground">@color/usmc_black_translucent</item>
-        <item name="android:colorBackgroundCacheHint">@null</item>
-        <item name="android:backgroundDimEnabled">true</item>
-    </style>
-
-    <style name="USMCTheme.Transparent.NoTitleBar">
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:windowFullscreen">true</item>
-    </style>
-
-    <style name="USMCTheme.ActionBarTheme" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar">
+    <style name="USMCTheme.ActionBarStyle" parent="Widget.AppCompat.Light.ActionBar.Solid">
         <item name="background">@drawable/usmc_bottom_border_small</item>
         <item name="elevation">@dimen/usmc_action_bar_elevation</item>
     </style>
@@ -118,16 +117,4 @@
     <!--<item name="backgroundTint">?attr/colorControlHighlight</item>-->
     <!--<item name="android:textColor">@color/usmc_btn_color</item>-->
     <!--</style>-->
-
-    <style name="USMCTheme.TextAppearance.Large" parent="@android:style/TextAppearance.Material.Large">
-        <item name="android:textSize">@dimen/text_size_large</item>
-    </style>
-
-    <style name="USMCTheme.TextAppearance.Medium" parent="@android:style/TextAppearance.Material.Medium">
-        <item name="android:textSize">@dimen/text_size_medium</item>
-    </style>
-
-    <style name="USMCTheme.TextAppearance.Small" parent="@android:style/TextAppearance.Material.Small">
-        <item name="android:textSize">@dimen/text_size_small</item>
-    </style>
 </resources>
