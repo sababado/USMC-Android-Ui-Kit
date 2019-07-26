@@ -128,6 +128,12 @@
     <!--<item name="android:textColor">@color/usmc_btn_color</item>-->
     <!--</style>-->
 
+    <style name="USMCTheme.TextAppearance.Giant" parent="@android:style/TextAppearance.Material.Large">
+        <item name="android:textSize">@dimen/text_size_giant</item>
+    </style>
+    <style name="USMCTheme.TextAppearance.Huge" parent="@android:style/TextAppearance.Material.Large">
+        <item name="android:textSize">@dimen/text_size_huge</item>
+    </style>
     <style name="USMCTheme.TextAppearance.Large" parent="@android:style/TextAppearance.Material.Large">
         <item name="android:textSize">@dimen/text_size_large</item>
     </style>
