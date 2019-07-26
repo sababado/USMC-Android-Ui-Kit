@@ -34,6 +34,8 @@
     <color name="usmc_clay_see_through">#DD816040</color>
     <color name="usmc_mud">#4E3629</color>
 
+    <color name="usmc_divider_background_solid">@color/usmc_gold</color>
+
     <color name="usmc_white">#FFF</color>
 
     <color name="usmc_black_translucent">#7000</color>
