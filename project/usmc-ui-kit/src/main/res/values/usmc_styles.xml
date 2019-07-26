@@ -145,4 +145,12 @@
     <style name="USMCTheme.TextAppearance.Small" parent="@android:style/TextAppearance.Material.Small">
         <item name="android:textSize">@dimen/text_size_small</item>
     </style>
+
+    <style name="USMCTheme.TextAppearance.Tiny" parent="@android:style/TextAppearance.Material.Small">
+        <item name="android:textSize">@dimen/text_size_tiny</item>
+    </style>
+
+    <style name="USMCTheme.TextAppearance.Puny" parent="@android:style/TextAppearance.Material.Small">
+        <item name="android:textSize">@dimen/text_size_puny</item>
+    </style>
 </resources>
